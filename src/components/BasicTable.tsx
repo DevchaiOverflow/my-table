@@ -8,6 +8,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { Formik, Form, Field, FieldArray } from 'formik'
+import TextField from '@material-ui/core/TextField';
 
 const useStyles = makeStyles({
     table: {
@@ -58,19 +59,64 @@ const BasicTable = () => {
                                                 <TableRow key={index}>
                                                     <TableCell align="center">{row.id}</TableCell>
                                                     <TableCell component="th" scope="row">
-                                                        <Field type="text" name={`dataSource[${index}].name`} />
+                                                        <Field
+                                                            type="text"
+                                                            name={`dataSource[${index}].name`}
+                                                            component={TextField}
+                                                            label="Size"
+                                                            id="outlined-size-small"
+                                                            defaultValue="Small"
+                                                            variant="outlined"
+                                                            size="small"
+                                                        />
                                                     </TableCell>
                                                     <TableCell align="right">
-                                                        <Field type="text" name={`dataSource[${index}].calories`} />
+                                                        <Field
+                                                            type="text"
+                                                            name={`dataSource[${index}].calories`}
+                                                            component={TextField}
+                                                            label="Size"
+                                                            id="outlined-size-small"
+                                                            defaultValue="Small"
+                                                            variant="outlined"
+                                                            size="small"
+                                                        />
                                                     </TableCell>
                                                     <TableCell align="right">
-                                                        <Field type="text" name={`dataSource[${index}].fat`} />
+                                                        <Field
+                                                            type="text"
+                                                            name={`dataSource[${index}].fat`}
+                                                            component={TextField}
+                                                            label="Size"
+                                                            id="outlined-size-small"
+                                                            defaultValue="Small"
+                                                            variant="outlined"
+                                                            size="small"
+                                                        />
                                                     </TableCell>
                                                     <TableCell align="right">
-                                                        <Field type="text" name={`dataSource[${index}].carbs`} />
+                                                        <Field
+                                                            type="text"
+                                                            name={`dataSource[${index}].carbs`}
+                                                            component={TextField}
+                                                            label="Size"
+                                                            id="outlined-size-small"
+                                                            defaultValue="Small"
+                                                            variant="outlined"
+                                                            size="small"
+                                                        />
                                                     </TableCell>
                                                     <TableCell align="right">
-                                                        <Field type="text" name={`dataSource[${index}].protein`} />
+                                                        <Field
+                                                            type="text"
+                                                            name={`dataSource[${index}].protein`}
+                                                            component={TextField}
+                                                            label="Size"
+                                                            id="outlined-size-small"
+                                                            defaultValue="Small"
+                                                            variant="outlined"
+                                                            size="small"
+                                                        />
                                                     </TableCell>
                                                 </TableRow>
                                             ))}
